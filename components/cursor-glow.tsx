@@ -1,21 +1,21 @@
-// "use client"
+"use client"
 
-// import { useEffect, useRef } from "react"
+import { useEffect, useRef } from "react"
 
-// export function CursorGlow() {
-//   const glowRef = useRef<HTMLDivElement>(null)
+export function CursorGlow() {
+  const glowRef = useRef<HTMLDivElement>(null)
 
-//   useEffect(() => {
-//     const handleMouseMove = (e: MouseEvent) => {
-//       if (glowRef.current) {
-//         glowRef.current.style.left = `${e.clientX}px`
-//         glowRef.current.style.top = `${e.clientY}px`
-//       }
-//     }
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (glowRef.current) {
+        glowRef.current.style.left = `${e.clientX}px`
+        glowRef.current.style.top = `${e.clientY}px`
+      }
+    }
 
-//     window.addEventListener("mousemove", handleMouseMove)
-//     return () => window.removeEventListener("mousemove", handleMouseMove)
-//   }, [])
+    window.addEventListener("mousemove", handleMouseMove)
+    return () => window.removeEventListener("mousemove", handleMouseMove)
+  }, [])
 
-//   return <div ref={glowRef} className="cursor-glow hidden lg:block" />
-// }
+  return <div ref={glowRef} className="cursor-glow hidden lg:block" />
+}

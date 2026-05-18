@@ -1,8 +1,8 @@
 "use client"
 
-// import { ParticleBackground } from "@/components/particle-background"
-// import { CursorGlow } from "@/components/cursor-glow"
-// import { LoadingScreen } from "@/components/loading-screen"
+import { ParticleBackground } from "@/components/particle-background"
+import { CursorGlow } from "@/components/cursor-glow"
+import { LoadingScreen } from "@/components/loading-screen"
 import { Navigation } from "@/components/navigation"
 import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
@@ -14,9 +14,9 @@ import { Footer } from "@/components/footer"
 export default function Portfolio() {
   return (
     <>
-      {/* <LoadingScreen />
+      <LoadingScreen />
       <ParticleBackground />
-      <CursorGlow /> */}
+      <CursorGlow /> 
       
     <div className="relative z-10">
         <Navigation />
